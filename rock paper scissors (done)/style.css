@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  font-style: italic;
+}
+#gameDiv {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid darkorchid;
+  border-radius: 25px;
+  padding: 10px;
+  background-color: black;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  width: 50%;
+}
+h1 {
+  font-size: 2.5rem;
+  color: lightgrey;
+}
+.choices {
+  margin: 10px;
+}
+.choices button {
+  font-size: 6.5rem;
+  min-width: 160px;
+  margin: 10px;
+  border-radius: 250px;
+  background-color: darkorchid;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+.choices button:hover {
+  background-color: violet;
+}
+#playerDisplay,
+#computerDisplay {
+  color: white;
+  font-size: 1.5rem;
+}
+#resultDisplay {
+  font-size: 2rem;
+  margin: 20px;
+}
+.scoreDisplay {
+  color: white;
+  font-size: 1.5rem;
+}
+.greenText,
+#playerScoreDisplay {
+  color: lightgreen;
+}
+.redText,
+#computerScoreDisplay {
+  color: cyan;
+}
+.whiteText {
+  color: white;
+}
+@media (max-width: 1024px) {
+  .choices button {
+    font-size: 4rem;
+    min-width: 70px;
+    margin: 10px;
+    border-radius: 250px;
+    background-color: darkorchid;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+  h1 {
+    font-size: 1.5em;
+    color: lightgrey;
+  }
+  .scoreDisplay {
+    font-size: 1.5rem;
+    color: white;
+  }
+  #playerDisplay,
+  #computerDisplay {
+    font-size: 1.5rem;
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .choices button {
+    font-size: 3rem;
+    min-width: 50px;
+    margin: 10px;
+    border-radius: 250px;
+    background-color: darkorchid;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+  h1 {
+    font-size: 1em;
+    color: lightgrey;
+  }
+  .scoreDisplay {
+    font-size: 1rem;
+    color: white;
+  }
+  #playerDisplay,
+  #computerDisplay {
+    font-size: 1rem;
+    color: white;
+  }
+}
+@media (max-width: 480px) {
+  .choices button {
+    font-size: 2rem;
+    min-width: 50px;
+    margin: 10px;
+    border-radius: 250px;
+    background-color: darkorchid;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+  h1 {
+    font-size: 1em;
+    color: lightgrey;
+  }
+  .scoreDisplay {
+    font-size: 1rem;
+    color: white;
+  }
+  #playerDisplay,
+  #computerDisplay {
+    font-size: 1rem;
+    color: white;
+  }
+}
